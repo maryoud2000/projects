@@ -8,7 +8,6 @@ html {
 #logo{
     margin-left: 75px;   
 }
-
 button {
     background-color: #fdf0c4;
     color: rgb(1, 83, 26);
@@ -18,20 +17,24 @@ button {
     font-family: 'Nunito', sans-serif;
     font-size: 18px;
 }
-
 button:hover {
     background-color: rgb(136, 187, 136);
 }
-  
 #contact{
     margin-right: 75px;
 }
-
 h1{
     color: rgb(129, 74, 2);
     text-align: center;
     font-family: 'Oleo Script', cursive;
     font-size:50px;
+}
+#medialinks {
+    display: flex;
+    justify-content: center;  
+}
+.social {
+    margin: 5px;
 }
 
 /*Designing home page*/
@@ -41,22 +44,26 @@ h1{
     width: 600px;
     border-radius: 8px;
 }
-
 .home_text {
     font-family: "Montserrat", Arial, "Helvetica Neue", Helvetica, sans-serif;
     color: rgb(129, 74, 2);
     text-align: justify;
-    padding: 50px 75px 40px 75px; 
+    padding: 25px 75px 40px 75px; 
 }
 
-/*Designing travel guide page*/   
+/*Designing travel guide page*/ 
+.guide_text {
+    font-family: "Montserrat", Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: rgb(129, 74, 2);
+    text-align: justify;
+    padding: 0px 75px 5px 75px; 
+}  
 .guide-images {
     border: 1px solid #ccc;
     width: 25%;
     text-align: center;
     margin: 5px;   
 }
-
 .guide-images:hover {
     border: 1px solid #777;
 }
@@ -72,13 +79,7 @@ h1{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin-bottom: 40px;
-}
-.guide_text {
-    font-family: "Montserrat", Arial, "Helvetica Neue", Helvetica, sans-serif;
-    color: rgb(129, 74, 2);
-    text-align: justify;
-    padding: 0px 75px 5px 75px; 
+    margin-bottom: 5px;
 }
 
 /*Designing about us page*/
@@ -98,41 +99,44 @@ h1{
 }
 
 /*Designing contact us page*/ 
-h2{
+h2 {
     color: rgb(129, 74, 2);
     text-align: left;
     font-family:'Courier New', Courier, monospace
     
 }
-  input[type=text], textarea {
+input[type=text], textarea {
     width: 50%;
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
     resize: vertical; 
     margin-top: 6px;  
-  }
+}
    
-  input[type=submit] {
+input[type=submit] {
     background-color: #6db96f;
     color: white;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-  }
+}
   
-  input[type=submit]:hover {
+input[type=submit]:hover {
     background-color: #45a049;
-  }
+}
   
-  .contact {
-     margin: 5px 75px 170px 75px;
-  }
-  
-  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+.contact {
+    margin: 5px 75px 40px 75px;
+}
+.call {
+    color: rgb(3, 134, 3);
+    font-family:'Courier New', Courier, monospace 
+}
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 600px) {
-    .info, input[type=submit] {
-      width: 100%;
-      margin-top: 0;
-    }}
+  .info, input[type=submit] {
+   width: 100%;
+   margin-top: 0;
+}}
